@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Memory Escape | サポートとプライバシー</title>
+    <meta name="description" content="Memory Escape の遊び方、サポート、プライバシーポリシー。" />
+    <style>
+      :root { --paper:#f7f0e1; --paper-deep:#e9ddc4; --ink:#283144; --soft:#5e6470; --yellow:#f9c948; --red:#e55a3b; --green:#61ad86; --line:#d9cdb5; }
+      * { box-sizing:border-box; }
+      html { scroll-behavior:smooth; }
+      body { margin:0; color:var(--ink); background:var(--paper); font-family:ui-rounded,"Hiragino Maru Gothic ProN","Hiragino Sans",system-ui,sans-serif; line-height:1.75; }
+      a { color:inherit; }
+      header, section, footer { width:min(960px,calc(100% - 40px)); margin:auto; }
+      header { display:flex; align-items:center; justify-content:space-between; padding:30px 0; }
+      .wordmark { display:inline-grid; font-size:1.1rem; font-weight:950; letter-spacing:-.06em; line-height:.8; text-decoration:none; }
+      .wordmark b { color:var(--red); }
+      nav { display:flex; gap:20px; font-size:.9rem; font-weight:750; color:var(--soft); }
+      nav a { text-decoration:none; }
+      .hero { min-height:420px; display:grid; grid-template-columns:1fr .78fr; align-items:center; gap:40px; }
+      .eyebrow { color:#d99314; font-size:.75rem; font-weight:900; letter-spacing:.15em; margin:0 0 10px; }
+      h1,h2,h3,p { margin-top:0; }
+      h1 { font-size:clamp(3rem,9vw,5.5rem); line-height:1.02; letter-spacing:-.07em; margin-bottom:22px; }
+      h2 { font-size:clamp(2rem,5vw,3.25rem); letter-spacing:-.055em; line-height:1.1; margin-bottom:28px; }
+      .lede, .copy { color:var(--soft); }
+      .scene { position:relative; aspect-ratio:1; border:4px solid var(--ink); border-radius:32px; background-color:#fdf8ed; background-image:linear-gradient(90deg,transparent 24%,#ded2b9 25%,transparent 26%,transparent 49%,#ded2b9 50%,transparent 51%,transparent 74%,#ded2b9 75%,transparent 76%),linear-gradient(transparent 24%,#ded2b9 25%,transparent 26%,transparent 49%,#ded2b9 50%,transparent 51%,transparent 74%,#ded2b9 75%,transparent 76%); background-size:25% 25%; box-shadow:0 9px 0 #cfc1a5; }
+      .chick { position:absolute; width:42%; aspect-ratio:1; left:30%; top:30%; border:4px solid var(--ink); border-radius:48% 48% 42% 42%; background:var(--yellow); box-shadow:inset -8px -9px 0 rgba(225,163,34,.25); }
+      .chick:before,.chick:after { content:""; position:absolute; top:40%; width:31%; height:24%; border:4px solid var(--ink); background:var(--yellow); z-index:-1; }.chick:before { left:-21%; border-radius:90% 20% 20% 90%; transform:rotate(23deg); }.chick:after { right:-21%; border-radius:20% 90% 90% 20%; transform:rotate(-23deg); }
+      .eye { position:absolute; top:39%; width:8%; aspect-ratio:1; border-radius:50%; background:var(--ink); }.eye.one { left:32%; }.eye.two { right:32%; }.beak { position:absolute; top:56%; left:43%; width:0; height:0; border-left:10px solid transparent; border-right:10px solid transparent; border-top:16px solid #ef982d; }
+      .bomb { position:absolute; width:17%; aspect-ratio:1; border:4px solid var(--ink); border-radius:50%; background:#3b4252; }.bomb:after { content:""; position:absolute; left:55%; top:-31%; height:32%; width:33%; border-top:4px solid #a97939; border-right:4px solid #a97939; border-radius:0 90% 0 0; }.bomb.one { left:10%; top:14%; }.bomb.two { right:10%; bottom:12%; }
+      .flag { position:absolute; right:12%; top:13%; width:14%; height:31%; border-left:7px solid var(--ink); }.flag:after { content:""; position:absolute; top:0; left:0; width:100%; height:39%; border:3px solid var(--ink); background:var(--green); clip-path:polygon(0 0,100% 50%,0 100%); }
+      section { border-top:2px solid var(--line); padding:76px 0; }
+      .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }.cards article { border:2px solid var(--line); border-radius:22px; padding:24px; background:#fffaf0; }.cards h3 { margin-bottom:8px; }.cards p { margin:0; color:var(--soft); font-size:.94rem; }
+      .privacy { width:100%; padding:76px max(20px,calc((100% - 960px)/2)); background:var(--paper-deep); }.privacy > div { max-width:960px; margin:auto; }.policy { display:grid; grid-template-columns:repeat(2,1fr); gap:26px 50px; }.policy p { margin:0; color:var(--soft); }.effective { color:var(--soft); font-size:.88rem; }
+      footer { display:flex; justify-content:space-between; align-items:center; padding:28px 0; color:var(--soft); font-size:.84rem; } footer p { margin:0; }
+      @media (max-width:700px) { header { align-items:flex-start; gap:18px; } nav { gap:12px; font-size:.78rem; }.hero { grid-template-columns:1fr; padding:35px 0 65px; }.scene { width:min(100%,360px); }.cards,.policy { grid-template-columns:1fr; }.privacy { padding-top:62px; padding-bottom:62px; } footer { flex-wrap:wrap; gap:12px; } }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a class="wordmark" href="#top" aria-label="Memory Escape トップへ">MEMORY<b>ESCAPE</b></a>
+      <nav aria-label="ページ内ナビゲーション"><a href="#support">サポート</a><a href="#privacy">プライバシー</a></nav>
+    </header>
+    <main id="top">
+      <div class="hero">
+        <div>
+          <p class="eyebrow">iOS MEMORY PUZZLE</p>
+          <h1>おぼえて、<br />だっしゅつ！</h1>
+          <p class="lede">数秒だけ表示されるボムの配置を記憶して、見えなくなった盤面をゴールまで進むパズルゲームです。</p>
+        </div>
+        <div class="scene" aria-label="ひよことボムのゲーム盤イラスト"><div class="flag"></div><div class="bomb one"></div><div class="bomb two"></div><div class="chick"><i class="eye one"></i><i class="eye two"></i><i class="beak"></i></div></div>
+      </div>
+      <section id="support">
+        <p class="eyebrow">SUPPORT</p><h2>サポート</h2>
+        <div class="cards">
+          <article><h3>あそびかた</h3><p>ボムの位置を覚えたら、十字キーまたはスワイプでひよこを動かし、旗のマスを目指してください。</p></article>
+          <article><h3>記録について</h3><p>ステージの進行、星、ハイスコアはこの端末内だけに保存されます。アプリを削除すると、端末内の記録は削除される場合があります。</p></article>
+          <article><h3>動作環境</h3><p>iOS 17 以降に対応しています。ログイン、アカウント作成、インターネット接続は必要ありません。</p></article>
+        </div>
+      </section>
+      <section class="privacy" id="privacy"><div>
+        <p class="eyebrow">PRIVACY POLICY</p><h2>プライバシーポリシー</h2><p class="effective">制定日：2026年7月26日</p>
+        <div class="policy">
+          <div><h3>収集する情報</h3><p>Memory Escape は、個人情報、利用状況、端末識別子、位置情報、連絡先、写真その他のデータを収集しません。広告、解析、トラッキングのための SDK も使用しません。</p></div>
+          <div><h3>端末内の記録</h3><p>ステージの進行状況、星の数、ハイスコアは、ゲームを動作させるために端末内へ保存されます。これらの記録が開発者その他の第三者へ送信されることはありません。</p></div>
+          <div><h3>第三者への共有</h3><p>当アプリは情報を収集しないため、第三者への販売、共有、広告利用を行いません。アカウント作成やログインもありません。</p></div>
+          <div><h3>ポリシーの変更</h3><p>機能の追加などにより本ポリシーを変更する場合は、このページに最新の内容と制定日を掲載します。</p></div>
+        </div>
+      </div></section>
+    </main>
+    <footer><a class="wordmark" href="#top">MEMORY<b>ESCAPE</b></a><p>© 2026 Memory Escape</p><a href="#privacy">プライバシーポリシー</a></footer>
+  </body>
+</html>
